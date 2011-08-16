@@ -28,17 +28,20 @@
   self.window.rootViewController = controller;
   [self.window makeKeyAndVisible];
   
+  scene = [[EEScene alloc] init];
+  scene.clearColor = GLKVector4Make(0.1, 0.9, 0.9, 0.0);
+  
   return YES;
 }
 
 - (void)glkViewControllerUpdate:(GLKViewController *)controller {
-  NSLog(@"in glkViewControllerUpdate");
+//  NSLog(@"in glkViewControllerUpdate");
+  [scene update];
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
-  NSLog(@"in glkView:drawInRect:");
-  glClearColor(0.5, 0.5, 0.5, 0.5);
-  glClear(GL_COLOR_BUFFER_BIT);
+//  NSLog(@"in glkView:drawInRect:");
+  [scene render];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
