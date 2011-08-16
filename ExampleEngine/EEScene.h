@@ -11,9 +11,11 @@
 
 @interface EEScene : NSObject {
   GLKVector4 clearColor;
+  float left, right, bottom, top;
 }
 
 @property GLKVector4 clearColor;
+@property float left, right, bottom, top;
 
 -(void)update;
 -(void)render;

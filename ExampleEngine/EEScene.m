@@ -11,6 +11,7 @@
 @implementation EEScene
 
 @synthesize clearColor;
+@synthesize left, right, bottom, top;
 
 -(void)update {
 //  NSLog(@"in EEScene's update");
@@ -26,6 +27,7 @@
                        0,  1};
   
   GLKBaseEffect *effect = [[GLKBaseEffect alloc] init];
+  effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(left, right, bottom, top, 1, -1);
   [effect prepareToDraw];
   
   glEnableVertexAttribArray(GLKVertexAttribPosition);

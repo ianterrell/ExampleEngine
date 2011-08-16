@@ -31,6 +31,10 @@
   
   scene = [[EEScene alloc] init];
   scene.clearColor = GLKVector4Make(0.1, 0.9, 0.9, 0.0);
+  scene.left   = -3;
+  scene.right  =  3;
+  scene.bottom = -2;
+  scene.top    =  2;
   
   return YES;
 }
