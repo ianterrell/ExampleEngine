@@ -17,7 +17,7 @@
 }
 
 -(void)render {
-//  NSLog(@"in EEScene's update");
+//  NSLog(@"in EEScene's render");
   glClearColor(clearColor.r, clearColor.g, clearColor.b, clearColor.a);
   glClear(GL_COLOR_BUFFER_BIT);
 }
