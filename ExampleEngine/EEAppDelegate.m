@@ -14,11 +14,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
+  EAGLContext *context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+  [EAGLContext setCurrentContext:context];
+  
+  GLKView *view = [[GLKView alloc] initWithFrame:[[UIScreen mainScreen] bounds] context:context];
+  view.delegate = self;
+  
+  GLKViewController *controller = [[GLKViewController alloc] init];
+  controller.delegate = self;
+  controller.view = view;
+  
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  self.window.rootViewController = controller;
+  [self.window makeKeyAndVisible];
+  
+  return YES;
+}
+
+- (void)glkViewControllerUpdate:(GLKViewController *)controller {
+  NSLog(@"in glkViewControllerUpdate");
+}
+
+- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
+  NSLog(@"in glkView:drawInRect:");
+  glClearColor(0.5, 0.5, 0.5, 0.5);
+  glClear(GL_COLOR_BUFFER_BIT);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
