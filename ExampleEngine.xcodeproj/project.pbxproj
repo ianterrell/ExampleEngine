@@ -18,11 +18,11 @@
 		3C69616713FAC12600540465 /* ExampleEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C69616B13FAC12600540465 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3C69616D13FAC12600540465 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3C69617113FAC12600540465 /* ExampleEngine-Info.plist */ = {isa = PBXFileReference; path = "ExampleEngine-Info.plist"; sourceTree = "<group>"; };
+		3C69617113FAC12600540465 /* ExampleEngine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleEngine-Info.plist"; sourceTree = "<group>"; };
 		3C69617313FAC12600540465 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C69617513FAC12600540465 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3C69617713FAC12600540465 /* ExampleEngine-Prefix.pch */ = {isa = PBXFileReference; path = "ExampleEngine-Prefix.pch"; sourceTree = "<group>"; };
-		3C69617813FAC12600540465 /* EEAppDelegate.h */ = {isa = PBXFileReference; path = EEAppDelegate.h; sourceTree = "<group>"; };
+		3C69617713FAC12600540465 /* ExampleEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExampleEngine-Prefix.pch"; sourceTree = "<group>"; };
+		3C69617813FAC12600540465 /* EEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEAppDelegate.h; sourceTree = "<group>"; };
 		3C69617913FAC12600540465 /* EEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
