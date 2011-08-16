@@ -7,6 +7,7 @@
 //
 
 #import "EEAppDelegate.h"
+#import "EESceneController.h"
 
 @implementation EEAppDelegate
 
@@ -20,7 +21,7 @@
   GLKView *view = [[GLKView alloc] initWithFrame:[[UIScreen mainScreen] bounds] context:context];
   view.delegate = self;
   
-  GLKViewController *controller = [[GLKViewController alloc] init];
+  EESceneController *controller = [[EESceneController alloc] init];
   controller.delegate = self;
   controller.view = view;
   
