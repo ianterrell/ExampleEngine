@@ -18,6 +18,8 @@
 		3C69618913FAE0D000540465 /* EEScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C69618813FAE0D000540465 /* EEScene.m */; };
 		3C69619C13FB06EC00540465 /* EESceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C69619B13FB06EC00540465 /* EESceneController.m */; };
 		3C7657C213FC19D200D71342 /* EEShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657C113FC19D200D71342 /* EEShape.m */; };
+		3C7657C913FC220D00D71342 /* EETriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657C813FC220D00D71342 /* EETriangle.m */; };
+		3C7657CD13FC26B500D71342 /* TriangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657CC13FC26B500D71342 /* TriangleScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,10 @@
 		3C69619B13FB06EC00540465 /* EESceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EESceneController.m; sourceTree = "<group>"; };
 		3C7657C013FC19D200D71342 /* EEShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEShape.h; sourceTree = "<group>"; };
 		3C7657C113FC19D200D71342 /* EEShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEShape.m; sourceTree = "<group>"; };
+		3C7657C713FC220D00D71342 /* EETriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EETriangle.h; sourceTree = "<group>"; };
+		3C7657C813FC220D00D71342 /* EETriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EETriangle.m; sourceTree = "<group>"; };
+		3C7657CB13FC26B500D71342 /* TriangleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleScene.h; sourceTree = "<group>"; };
+		3C7657CC13FC26B500D71342 /* TriangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 			children = (
 				3C69618613FADEF800540465 /* Scenes */,
 				3C7657BE13FC19C300D71342 /* Shapes */,
+				3C7657CA13FC26A100D71342 /* Example Game Code */,
 				3C69617813FAC12600540465 /* EEAppDelegate.h */,
 				3C69617913FAC12600540465 /* EEAppDelegate.m */,
 				3C69617013FAC12600540465 /* Supporting Files */,
@@ -126,8 +133,19 @@
 			children = (
 				3C7657C013FC19D200D71342 /* EEShape.h */,
 				3C7657C113FC19D200D71342 /* EEShape.m */,
+				3C7657C713FC220D00D71342 /* EETriangle.h */,
+				3C7657C813FC220D00D71342 /* EETriangle.m */,
 			);
 			name = Shapes;
+			sourceTree = "<group>";
+		};
+		3C7657CA13FC26A100D71342 /* Example Game Code */ = {
+			isa = PBXGroup;
+			children = (
+				3C7657CB13FC26B500D71342 /* TriangleScene.h */,
+				3C7657CC13FC26B500D71342 /* TriangleScene.m */,
+			);
+			name = "Example Game Code";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +215,8 @@
 				3C69618913FAE0D000540465 /* EEScene.m in Sources */,
 				3C69619C13FB06EC00540465 /* EESceneController.m in Sources */,
 				3C7657C213FC19D200D71342 /* EEShape.m in Sources */,
+				3C7657C913FC220D00D71342 /* EETriangle.m in Sources */,
+				3C7657CD13FC26B500D71342 /* TriangleScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

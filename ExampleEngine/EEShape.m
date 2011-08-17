@@ -20,4 +20,11 @@
   return [vertexData mutableBytes];
 }
 
+-(void)render {
+  glEnableVertexAttribArray(GLKVertexAttribPosition);
+  glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, 0, self.vertices);
+  glDrawArrays(GL_TRIANGLES, 0, 3);
+  glDisableVertexAttribArray(GLKVertexAttribPosition);
+}
+
 @end

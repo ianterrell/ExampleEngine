@@ -16,4 +16,6 @@
 @property(readonly) int numVertices;
 @property(readonly) GLKVector2 *vertices;
 
+-(void)render;
+
 @end
