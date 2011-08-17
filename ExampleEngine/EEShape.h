@@ -8,14 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
+#import "EEScene.h"
 
 @interface EEShape : NSObject {
   NSMutableData *vertexData;
+  GLKVector4 color;
 }
 
 @property(readonly) int numVertices;
 @property(readonly) GLKVector2 *vertices;
+@property GLKVector4 color;
 
--(void)render;
+-(void)renderInScene:(EEScene *)scene;
 
 @end

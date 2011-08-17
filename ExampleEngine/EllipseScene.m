@@ -22,7 +22,7 @@
 
 -(void)render {
   [super render];
-  [ellipse render];
+  [ellipse renderInScene:self];
 }
 
 @end

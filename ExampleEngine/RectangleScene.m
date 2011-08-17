@@ -22,7 +22,7 @@
 
 -(void)render {
   [super render];
-  [rectangle render];
+  [rectangle renderInScene:self];
 }
 
 @end

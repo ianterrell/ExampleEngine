@@ -16,6 +16,7 @@
 
 @property GLKVector4 clearColor;
 @property float left, right, bottom, top;
+@property(readonly) GLKMatrix4 projectionMatrix;
 
 -(void)update;
 -(void)render;

@@ -21,10 +21,10 @@
 //  NSLog(@"in EEScene's render");
   glClearColor(clearColor.r, clearColor.g, clearColor.b, clearColor.a);
   glClear(GL_COLOR_BUFFER_BIT);
-  
-  GLKBaseEffect *effect = [[GLKBaseEffect alloc] init];
-  effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(left, right, bottom, top, 1, -1);
-  [effect prepareToDraw];
+}
+
+-(GLKMatrix4)projectionMatrix {
+  return GLKMatrix4MakeOrtho(left, right, bottom, top, 1, -1);
 }
 
 @end

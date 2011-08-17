@@ -15,13 +15,14 @@
   if (self) {
     polygon = [[EERegularPolygon alloc] initWithNumSides:6];
     polygon.radius = 1;
+    polygon.color = GLKVector4Make(0.9, 0.9, 0.1, 1.0);
   }
   return self;
 }
 
 -(void)render {
   [super render];
-  [polygon render];
+  [polygon renderInScene:self];
 }
 
 @end

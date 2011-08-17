@@ -10,6 +10,8 @@
 
 @implementation EEShape
 
+@synthesize color;
+
 -(int)numVertices {
   return 0;
 }
@@ -20,7 +22,13 @@
   return [vertexData mutableBytes];
 }
 
--(void)render {
+-(void)renderInScene:(EEScene *)scene {
+  GLKBaseEffect *effect = [[GLKBaseEffect alloc] init];
+  effect.useConstantColor = YES;
+  effect.constantColor = color;
+  effect.transform.projectionMatrix = scene.projectionMatrix;
+  [effect prepareToDraw];
+  
   glEnableVertexAttribArray(GLKVertexAttribPosition);
   glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, 0, self.vertices);
   glDrawArrays(GL_TRIANGLE_FAN, 0, self.numVertices);
