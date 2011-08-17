@@ -10,7 +10,7 @@
 
 @implementation EEShape
 
-@synthesize color;
+@synthesize color, useConstantColor;
 
 -(int)numVertices {
   return 0;
@@ -22,17 +22,35 @@
   return [vertexData mutableBytes];
 }
 
+- (GLKVector4 *)vertexColors {
+  if (vertexColorData == nil)
+    vertexColorData = [NSMutableData dataWithLength:sizeof(GLKVector4)*self.numVertices];
+  return [vertexColorData mutableBytes];
+}
+
 -(void)renderInScene:(EEScene *)scene {
   GLKBaseEffect *effect = [[GLKBaseEffect alloc] init];
-  effect.useConstantColor = YES;
-  effect.constantColor = color;
+  if (useConstantColor) {
+    effect.useConstantColor = YES;
+    effect.constantColor = color;
+  }
   effect.transform.projectionMatrix = scene.projectionMatrix;
   [effect prepareToDraw];
   
   glEnableVertexAttribArray(GLKVertexAttribPosition);
   glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, 0, self.vertices);
+  
+  if (!useConstantColor) {
+    glEnableVertexAttribArray(GLKVertexAttribColor);
+    glVertexAttribPointer(GLKVertexAttribColor, 4, GL_FLOAT, GL_FALSE, 0, self.vertexColors);
+  }
+  
   glDrawArrays(GL_TRIANGLE_FAN, 0, self.numVertices);
+
   glDisableVertexAttribArray(GLKVertexAttribPosition);
+  
+  if (!useConstantColor)
+    glDisableVertexAttribArray(GLKVertexAttribColor);
 }
 
 @end

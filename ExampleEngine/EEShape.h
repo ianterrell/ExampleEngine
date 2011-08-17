@@ -11,13 +11,16 @@
 #import "EEScene.h"
 
 @interface EEShape : NSObject {
-  NSMutableData *vertexData;
+  NSMutableData *vertexData, *vertexColorData;
   GLKVector4 color;
+  BOOL useConstantColor;
 }
 
 @property(readonly) int numVertices;
 @property(readonly) GLKVector2 *vertices;
+@property(readonly) GLKVector4 *vertexColors;
 @property GLKVector4 color;
+@property BOOL useConstantColor;
 
 -(void)renderInScene:(EEScene *)scene;
 
