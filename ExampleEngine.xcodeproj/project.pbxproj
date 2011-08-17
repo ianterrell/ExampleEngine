@@ -22,6 +22,8 @@
 		3C7657CD13FC26B500D71342 /* TriangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657CC13FC26B500D71342 /* TriangleScene.m */; };
 		3C7657D013FC352600D71342 /* EERectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657CF13FC352600D71342 /* EERectangle.m */; };
 		3C7657D613FC38D900D71342 /* RectangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657D513FC38D900D71342 /* RectangleScene.m */; };
+		3C7657D913FC480D00D71342 /* EEEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657D813FC480D00D71342 /* EEEllipse.m */; };
+		3C7657DC13FC48B900D71342 /* EllipseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657DB13FC48B900D71342 /* EllipseScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,10 @@
 		3C7657CF13FC352600D71342 /* EERectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EERectangle.m; sourceTree = "<group>"; };
 		3C7657D413FC38D900D71342 /* RectangleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleScene.h; sourceTree = "<group>"; };
 		3C7657D513FC38D900D71342 /* RectangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleScene.m; sourceTree = "<group>"; };
+		3C7657D713FC480C00D71342 /* EEEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEllipse.h; sourceTree = "<group>"; };
+		3C7657D813FC480D00D71342 /* EEEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEllipse.m; sourceTree = "<group>"; };
+		3C7657DA13FC48B900D71342 /* EllipseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EllipseScene.h; sourceTree = "<group>"; };
+		3C7657DB13FC48B900D71342 /* EllipseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EllipseScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,8 @@
 				3C7657C813FC220D00D71342 /* EETriangle.m */,
 				3C7657CE13FC352600D71342 /* EERectangle.h */,
 				3C7657CF13FC352600D71342 /* EERectangle.m */,
+				3C7657D713FC480C00D71342 /* EEEllipse.h */,
+				3C7657D813FC480D00D71342 /* EEEllipse.m */,
 			);
 			name = Shapes;
 			sourceTree = "<group>";
@@ -154,6 +162,8 @@
 				3C7657CC13FC26B500D71342 /* TriangleScene.m */,
 				3C7657D413FC38D900D71342 /* RectangleScene.h */,
 				3C7657D513FC38D900D71342 /* RectangleScene.m */,
+				3C7657DA13FC48B900D71342 /* EllipseScene.h */,
+				3C7657DB13FC48B900D71342 /* EllipseScene.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -229,6 +239,8 @@
 				3C7657CD13FC26B500D71342 /* TriangleScene.m in Sources */,
 				3C7657D013FC352600D71342 /* EERectangle.m in Sources */,
 				3C7657D613FC38D900D71342 /* RectangleScene.m in Sources */,
+				3C7657D913FC480D00D71342 /* EEEllipse.m in Sources */,
+				3C7657DC13FC48B900D71342 /* EllipseScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
