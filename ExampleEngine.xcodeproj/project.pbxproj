@@ -24,6 +24,8 @@
 		3C7657D613FC38D900D71342 /* RectangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657D513FC38D900D71342 /* RectangleScene.m */; };
 		3C7657D913FC480D00D71342 /* EEEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657D813FC480D00D71342 /* EEEllipse.m */; };
 		3C7657DC13FC48B900D71342 /* EllipseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657DB13FC48B900D71342 /* EllipseScene.m */; };
+		3C7657DF13FC4DEA00D71342 /* EERegularPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657DE13FC4DEA00D71342 /* EERegularPolygon.m */; };
+		3C7657E213FC4EB000D71342 /* HexagonScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657E113FC4EB000D71342 /* HexagonScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,10 @@
 		3C7657D813FC480D00D71342 /* EEEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEllipse.m; sourceTree = "<group>"; };
 		3C7657DA13FC48B900D71342 /* EllipseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EllipseScene.h; sourceTree = "<group>"; };
 		3C7657DB13FC48B900D71342 /* EllipseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EllipseScene.m; sourceTree = "<group>"; };
+		3C7657DD13FC4DEA00D71342 /* EERegularPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EERegularPolygon.h; sourceTree = "<group>"; };
+		3C7657DE13FC4DEA00D71342 /* EERegularPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EERegularPolygon.m; sourceTree = "<group>"; };
+		3C7657E013FC4EB000D71342 /* HexagonScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexagonScene.h; sourceTree = "<group>"; };
+		3C7657E113FC4EB000D71342 /* HexagonScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexagonScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,8 @@
 				3C7657CF13FC352600D71342 /* EERectangle.m */,
 				3C7657D713FC480C00D71342 /* EEEllipse.h */,
 				3C7657D813FC480D00D71342 /* EEEllipse.m */,
+				3C7657DD13FC4DEA00D71342 /* EERegularPolygon.h */,
+				3C7657DE13FC4DEA00D71342 /* EERegularPolygon.m */,
 			);
 			name = Shapes;
 			sourceTree = "<group>";
@@ -164,6 +172,8 @@
 				3C7657D513FC38D900D71342 /* RectangleScene.m */,
 				3C7657DA13FC48B900D71342 /* EllipseScene.h */,
 				3C7657DB13FC48B900D71342 /* EllipseScene.m */,
+				3C7657E013FC4EB000D71342 /* HexagonScene.h */,
+				3C7657E113FC4EB000D71342 /* HexagonScene.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -241,6 +251,8 @@
 				3C7657D613FC38D900D71342 /* RectangleScene.m in Sources */,
 				3C7657D913FC480D00D71342 /* EEEllipse.m in Sources */,
 				3C7657DC13FC48B900D71342 /* EllipseScene.m in Sources */,
+				3C7657DF13FC4DEA00D71342 /* EERegularPolygon.m in Sources */,
+				3C7657E213FC4EB000D71342 /* HexagonScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

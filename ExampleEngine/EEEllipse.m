@@ -9,7 +9,6 @@
 #import "EEEllipse.h"
 
 #define EE_ELLIPSE_RESOLUTION 64
-#define M_TAU (2*M_PI)
 
 @implementation EEEllipse
 
