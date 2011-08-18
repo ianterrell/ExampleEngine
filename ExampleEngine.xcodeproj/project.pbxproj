@@ -35,6 +35,7 @@
 		3C953B8613FD7145007803E4 /* EESprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C953B8513FD7144007803E4 /* EESprite.m */; };
 		3C953B8913FD7319007803E4 /* SpriteScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C953B8813FD7318007803E4 /* SpriteScene.m */; };
 		3C953B8D13FD775D007803E4 /* boy-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C953B8C13FD775D007803E4 /* boy-sprite.png */; };
+		3CB9A2AD13FD8D09009288FA /* TreeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9A2AC13FD8D09009288FA /* TreeScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,8 @@
 		3C953B8713FD7317007803E4 /* SpriteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteScene.h; sourceTree = "<group>"; };
 		3C953B8813FD7318007803E4 /* SpriteScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteScene.m; sourceTree = "<group>"; };
 		3C953B8C13FD775D007803E4 /* boy-sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boy-sprite.png"; sourceTree = "<group>"; };
+		3CB9A2AB13FD8D09009288FA /* TreeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeScene.h; sourceTree = "<group>"; };
+		3CB9A2AC13FD8D09009288FA /* TreeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +211,8 @@
 				3C953B7E13FD6E1C007803E4 /* SierpinskyTriangleScene.m */,
 				3C953B8713FD7317007803E4 /* SpriteScene.h */,
 				3C953B8813FD7318007803E4 /* SpriteScene.m */,
+				3CB9A2AB13FD8D09009288FA /* TreeScene.h */,
+				3CB9A2AC13FD8D09009288FA /* TreeScene.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				3C953B7F13FD6E1D007803E4 /* SierpinskyTriangleScene.m in Sources */,
 				3C953B8613FD7145007803E4 /* EESprite.m in Sources */,
 				3C953B8913FD7319007803E4 /* SpriteScene.m in Sources */,
+				3CB9A2AD13FD8D09009288FA /* TreeScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
