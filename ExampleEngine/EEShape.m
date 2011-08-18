@@ -12,6 +12,29 @@
 
 @synthesize color, useConstantColor, position, rotation, scale;
 
+
+-(id)init {
+  self = [super init];
+  if (self) {
+    // Draw with the color white
+    useConstantColor = YES;
+    color = GLKVector4Make(1,1,1,1);
+    
+    // No texture
+    texture = nil;
+    
+    // Center on the origin
+    position = GLKVector2Make(0,0);
+    
+    // Don't rotate
+    rotation = 0;
+    
+    // Scale to original size
+    scale = GLKVector2Make(1,1);
+  }
+  return self;
+}
+
 -(int)numVertices {
   return 0;
 }
