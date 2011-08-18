@@ -34,7 +34,7 @@
 		3C953B8313FD6EF1007803E4 /* sierpinksy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C953B8213FD6EF1007803E4 /* sierpinksy.jpg */; };
 		3C953B8613FD7145007803E4 /* EESprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C953B8513FD7144007803E4 /* EESprite.m */; };
 		3C953B8913FD7319007803E4 /* SpriteScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C953B8813FD7318007803E4 /* SpriteScene.m */; };
-		3C953B8B13FD7368007803E4 /* boy-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C953B8A13FD7368007803E4 /* boy-sprite.png */; };
+		3C953B8D13FD775D007803E4 /* boy-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C953B8C13FD775D007803E4 /* boy-sprite.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,7 +85,7 @@
 		3C953B8513FD7144007803E4 /* EESprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EESprite.m; sourceTree = "<group>"; };
 		3C953B8713FD7317007803E4 /* SpriteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteScene.h; sourceTree = "<group>"; };
 		3C953B8813FD7318007803E4 /* SpriteScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteScene.m; sourceTree = "<group>"; };
-		3C953B8A13FD7368007803E4 /* boy-sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "boy-sprite.png"; path = "../../../Documents/Projects/IanTerrell.com/Games Site/2d game engine/texturize shapes/boy-sprite.png"; sourceTree = "<group>"; };
+		3C953B8C13FD775D007803E4 /* boy-sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boy-sprite.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +215,7 @@
 		3C953B6D13FD596F007803E4 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
-				3C953B8A13FD7368007803E4 /* boy-sprite.png */,
+				3C953B8C13FD775D007803E4 /* boy-sprite.png */,
 				3C953B8213FD6EF1007803E4 /* sierpinksy.jpg */,
 				3C953B7B13FD6C52007803E4 /* ball.jpg */,
 				3C953B6F13FD5A01007803E4 /* landscape.jpg */,
@@ -278,7 +278,7 @@
 				3C953B7013FD5A01007803E4 /* landscape.jpg in Resources */,
 				3C953B7C13FD6C52007803E4 /* ball.jpg in Resources */,
 				3C953B8313FD6EF1007803E4 /* sierpinksy.jpg in Resources */,
-				3C953B8B13FD7368007803E4 /* boy-sprite.png in Resources */,
+				3C953B8D13FD775D007803E4 /* boy-sprite.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
