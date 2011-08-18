@@ -32,6 +32,9 @@
 		3C953B7C13FD6C52007803E4 /* ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C953B7B13FD6C52007803E4 /* ball.jpg */; };
 		3C953B7F13FD6E1D007803E4 /* SierpinskyTriangleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C953B7E13FD6E1C007803E4 /* SierpinskyTriangleScene.m */; };
 		3C953B8313FD6EF1007803E4 /* sierpinksy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C953B8213FD6EF1007803E4 /* sierpinksy.jpg */; };
+		3C953B8613FD7145007803E4 /* EESprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C953B8513FD7144007803E4 /* EESprite.m */; };
+		3C953B8913FD7319007803E4 /* SpriteScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C953B8813FD7318007803E4 /* SpriteScene.m */; };
+		3C953B8B13FD7368007803E4 /* boy-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C953B8A13FD7368007803E4 /* boy-sprite.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +81,11 @@
 		3C953B7D13FD6E1C007803E4 /* SierpinskyTriangleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SierpinskyTriangleScene.h; sourceTree = "<group>"; };
 		3C953B7E13FD6E1C007803E4 /* SierpinskyTriangleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SierpinskyTriangleScene.m; sourceTree = "<group>"; };
 		3C953B8213FD6EF1007803E4 /* sierpinksy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sierpinksy.jpg; sourceTree = "<group>"; };
+		3C953B8413FD7144007803E4 /* EESprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EESprite.h; sourceTree = "<group>"; };
+		3C953B8513FD7144007803E4 /* EESprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EESprite.m; sourceTree = "<group>"; };
+		3C953B8713FD7317007803E4 /* SpriteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteScene.h; sourceTree = "<group>"; };
+		3C953B8813FD7318007803E4 /* SpriteScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteScene.m; sourceTree = "<group>"; };
+		3C953B8A13FD7368007803E4 /* boy-sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "boy-sprite.png"; path = "../../../Documents/Projects/IanTerrell.com/Games Site/2d game engine/texturize shapes/boy-sprite.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +183,8 @@
 				3C7657D813FC480D00D71342 /* EEEllipse.m */,
 				3C7657DD13FC4DEA00D71342 /* EERegularPolygon.h */,
 				3C7657DE13FC4DEA00D71342 /* EERegularPolygon.m */,
+				3C953B8413FD7144007803E4 /* EESprite.h */,
+				3C953B8513FD7144007803E4 /* EESprite.m */,
 			);
 			name = Shapes;
 			sourceTree = "<group>";
@@ -196,6 +206,8 @@
 				3C953B7913FD6C24007803E4 /* BeachBallScene.m */,
 				3C953B7D13FD6E1C007803E4 /* SierpinskyTriangleScene.h */,
 				3C953B7E13FD6E1C007803E4 /* SierpinskyTriangleScene.m */,
+				3C953B8713FD7317007803E4 /* SpriteScene.h */,
+				3C953B8813FD7318007803E4 /* SpriteScene.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -203,6 +215,7 @@
 		3C953B6D13FD596F007803E4 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				3C953B8A13FD7368007803E4 /* boy-sprite.png */,
 				3C953B8213FD6EF1007803E4 /* sierpinksy.jpg */,
 				3C953B7B13FD6C52007803E4 /* ball.jpg */,
 				3C953B6F13FD5A01007803E4 /* landscape.jpg */,
@@ -265,6 +278,7 @@
 				3C953B7013FD5A01007803E4 /* landscape.jpg in Resources */,
 				3C953B7C13FD6C52007803E4 /* ball.jpg in Resources */,
 				3C953B8313FD6EF1007803E4 /* sierpinksy.jpg in Resources */,
+				3C953B8B13FD7368007803E4 /* boy-sprite.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +305,8 @@
 				3C953B7713FD6076007803E4 /* LandscapeScene.m in Sources */,
 				3C953B7A13FD6C25007803E4 /* BeachBallScene.m in Sources */,
 				3C953B7F13FD6E1D007803E4 /* SierpinskyTriangleScene.m in Sources */,
+				3C953B8613FD7145007803E4 /* EESprite.m in Sources */,
+				3C953B8913FD7319007803E4 /* SpriteScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
