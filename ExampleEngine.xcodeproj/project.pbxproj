@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1EF89B13FDA83900B0F2E3 /* OptimizedTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EF89A13FDA83900B0F2E3 /* OptimizedTree.m */; };
 		3C69616C13FAC12600540465 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C69616B13FAC12600540465 /* UIKit.framework */; };
 		3C69616E13FAC12600540465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C69616D13FAC12600540465 /* Foundation.framework */; };
 		3C69617413FAC12600540465 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C69617213FAC12600540465 /* InfoPlist.strings */; };
@@ -41,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C1EF89913FDA83900B0F2E3 /* OptimizedTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptimizedTree.h; sourceTree = "<group>"; };
+		3C1EF89A13FDA83900B0F2E3 /* OptimizedTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptimizedTree.m; sourceTree = "<group>"; };
 		3C69616713FAC12600540465 /* ExampleEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C69616B13FAC12600540465 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3C69616D13FAC12600540465 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -223,6 +226,8 @@
 				3CB9A2B013FDA08A009288FA /* Tree.m */,
 				3CB9A2B213FDA0DC009288FA /* ForestScene.h */,
 				3CB9A2B313FDA0DC009288FA /* ForestScene.m */,
+				3C1EF89913FDA83900B0F2E3 /* OptimizedTree.h */,
+				3C1EF89A13FDA83900B0F2E3 /* OptimizedTree.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				3CB9A2AD13FD8D09009288FA /* TreeScene.m in Sources */,
 				3CB9A2B113FDA08A009288FA /* Tree.m in Sources */,
 				3CB9A2B413FDA0DC009288FA /* ForestScene.m in Sources */,
+				3C1EF89B13FDA83900B0F2E3 /* OptimizedTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

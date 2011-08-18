@@ -10,8 +10,7 @@
 
 @implementation EEShape
 
-@synthesize color, useConstantColor, position, rotation, scale, children, parent;
-
+@synthesize color, useConstantColor, position, rotation, scale, children, parent, texture;
 
 -(id)init {
   self = [super init];
@@ -78,15 +77,15 @@
   // Set up the constant color effect if set
   if (useConstantColor) {
     effect.useConstantColor = YES;
-    effect.constantColor = color;
+    effect.constantColor = self.color;
   }
   
   // Set up our texture effect if set
-  if (texture != nil) {
+  if (self.texture != nil) {
     effect.texturingEnabled = YES;
     effect.texture2d0.envMode = GLKTextureEnvModeReplace;
     effect.texture2d0.target = GLKTextureTarget2D;
-    effect.texture2d0.glName = texture.glName;
+    effect.texture2d0.glName = self.texture.glName;
   }
   
   // Create a modelview matrix to position and rotate the object
@@ -129,7 +128,7 @@
     glDisableVertexAttribArray(GLKVertexAttribColor);
 
   // Cleanup: Done with texture data (only if we used it)
-  if (texture != nil)
+  if (self.texture != nil)
     glDisableVertexAttribArray(GLKVertexAttribTexCoord0);
   
   // Cleanup: Done with the current blend function

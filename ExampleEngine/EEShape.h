@@ -35,6 +35,7 @@
 @property(strong, readonly) NSMutableArray *children;
 @property(strong) EEShape *parent;
 @property(readonly) GLKMatrix4 modelviewMatrix;
+@property(strong,readonly) GLKTextureInfo *texture;
 
 -(void)renderInScene:(EEScene *)scene;
 -(void)setTextureImage:(UIImage *)image;
