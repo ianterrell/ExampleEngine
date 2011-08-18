@@ -36,6 +36,8 @@
 		3C953B8913FD7319007803E4 /* SpriteScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C953B8813FD7318007803E4 /* SpriteScene.m */; };
 		3C953B8D13FD775D007803E4 /* boy-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C953B8C13FD775D007803E4 /* boy-sprite.png */; };
 		3CB9A2AD13FD8D09009288FA /* TreeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9A2AC13FD8D09009288FA /* TreeScene.m */; };
+		3CB9A2B113FDA08A009288FA /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9A2B013FDA08A009288FA /* Tree.m */; };
+		3CB9A2B413FDA0DC009288FA /* ForestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9A2B313FDA0DC009288FA /* ForestScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,10 @@
 		3C953B8C13FD775D007803E4 /* boy-sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boy-sprite.png"; sourceTree = "<group>"; };
 		3CB9A2AB13FD8D09009288FA /* TreeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeScene.h; sourceTree = "<group>"; };
 		3CB9A2AC13FD8D09009288FA /* TreeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeScene.m; sourceTree = "<group>"; };
+		3CB9A2AF13FDA08A009288FA /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		3CB9A2B013FDA08A009288FA /* Tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tree.m; sourceTree = "<group>"; };
+		3CB9A2B213FDA0DC009288FA /* ForestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForestScene.h; sourceTree = "<group>"; };
+		3CB9A2B313FDA0DC009288FA /* ForestScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForestScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +219,10 @@
 				3C953B8813FD7318007803E4 /* SpriteScene.m */,
 				3CB9A2AB13FD8D09009288FA /* TreeScene.h */,
 				3CB9A2AC13FD8D09009288FA /* TreeScene.m */,
+				3CB9A2AF13FDA08A009288FA /* Tree.h */,
+				3CB9A2B013FDA08A009288FA /* Tree.m */,
+				3CB9A2B213FDA0DC009288FA /* ForestScene.h */,
+				3CB9A2B313FDA0DC009288FA /* ForestScene.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -313,6 +323,8 @@
 				3C953B8613FD7145007803E4 /* EESprite.m in Sources */,
 				3C953B8913FD7319007803E4 /* SpriteScene.m in Sources */,
 				3CB9A2AD13FD8D09009288FA /* TreeScene.m in Sources */,
+				3CB9A2B113FDA08A009288FA /* Tree.m in Sources */,
+				3CB9A2B413FDA0DC009288FA /* ForestScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
