@@ -14,6 +14,7 @@
   self = [super init];
   if (self) {
     sprite = [[EESprite alloc] initWithImage:[UIImage imageNamed:@"boy-sprite.png"] pointRatio:100];
+    sprite.position = GLKVector2Make(2,-1);
   }
   return self;
 }

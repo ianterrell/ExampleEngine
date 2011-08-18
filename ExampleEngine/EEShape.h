@@ -15,6 +15,8 @@
   GLKVector4 color;
   BOOL useConstantColor;
   
+  GLKVector2 position;
+  
   GLKTextureInfo *texture;
 }
 
@@ -24,6 +26,7 @@
 @property(readonly) GLKVector2 *textureCoordinates;
 @property GLKVector4 color;
 @property BOOL useConstantColor;
+@property GLKVector2 position;
 
 -(void)renderInScene:(EEScene *)scene;
 -(void)setTextureImage:(UIImage *)image;
