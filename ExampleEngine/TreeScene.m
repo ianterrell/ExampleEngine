@@ -25,14 +25,11 @@
     trunk.height = 1;
     trunk.position = GLKVector2Make(0, -1.25);
     trunk.color = GLKVector4Make(0.4, 0.1, 0, 1);
+
+    [self.shapes addObject:trunk];
+    [self.shapes addObject:leaves];
   }
   return self;
-}
-
--(void)render {
-  [super render];
-  [trunk renderInScene:self];
-  [leaves renderInScene:self];
 }
 
 @end

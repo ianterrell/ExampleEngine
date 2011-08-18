@@ -12,6 +12,15 @@
 
 @synthesize clearColor;
 @synthesize left, right, bottom, top;
+@synthesize shapes;
+
+-(id)init {
+  self = [super init];
+  if (self) {
+    shapes = [[NSMutableArray alloc] init];
+  }
+  return self;
+}
 
 -(void)update {
 //  NSLog(@"in EEScene's update");
@@ -21,6 +30,8 @@
 //  NSLog(@"in EEScene's render");
   glClearColor(clearColor.r, clearColor.g, clearColor.b, clearColor.a);
   glClear(GL_COLOR_BUFFER_BIT);
+  
+  [shapes makeObjectsPerformSelector:@selector(renderInScene:) withObject:self];
 }
 
 -(GLKMatrix4)projectionMatrix {
