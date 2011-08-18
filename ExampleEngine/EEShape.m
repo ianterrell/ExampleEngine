@@ -10,7 +10,7 @@
 
 @implementation EEShape
 
-@synthesize color, useConstantColor, position, rotation, scale;
+@synthesize color, useConstantColor, position, rotation, scale, children, parent;
 
 
 -(id)init {
@@ -31,6 +31,9 @@
     
     // Scale to original size
     scale = GLKVector2Make(1,1);
+    
+    // No children by default
+    children = [[NSMutableArray alloc] init];
   }
   return self;
 }
@@ -57,6 +60,16 @@
   return [textureCoordinateData mutableBytes];
 }
 
+-(GLKMatrix4)modelviewMatrix {
+  GLKMatrix4 modelviewMatrix = GLKMatrix4Multiply(GLKMatrix4MakeTranslation(position.x, position.y, 0),
+                                                  GLKMatrix4MakeRotation(rotation, 0, 0, 1));
+  modelviewMatrix = GLKMatrix4Multiply(modelviewMatrix, GLKMatrix4MakeScale(scale.x, scale.y, 1));
+
+  if (parent != nil)
+    modelviewMatrix = GLKMatrix4Multiply(parent.modelviewMatrix, modelviewMatrix);
+  
+  return modelviewMatrix;
+}
 
 -(void)renderInScene:(EEScene *)scene {
   // Set up our rendering effect
@@ -77,10 +90,7 @@
   }
   
   // Create a modelview matrix to position and rotate the object
-  GLKMatrix4 modelviewMatrix = GLKMatrix4Multiply(GLKMatrix4MakeTranslation(position.x, position.y, 0),
-                                                  GLKMatrix4MakeRotation(rotation, 0, 0, 1));
-  modelviewMatrix = GLKMatrix4Multiply(modelviewMatrix, GLKMatrix4MakeScale(scale.x, scale.y, 1));
-  effect.transform.modelviewMatrix = modelviewMatrix;
+  effect.transform.modelviewMatrix = self.modelviewMatrix;
   
   // Set up the projection matrix to fit the scene's boundaries
   effect.transform.projectionMatrix = scene.projectionMatrix;
@@ -124,6 +134,9 @@
   
   // Cleanup: Done with the current blend function
   glDisable(GL_BLEND);
+  
+  // Draw our children
+  [children makeObjectsPerformSelector:@selector(renderInScene:) withObject:scene];
 }
 
 -(void)setTextureImage:(UIImage *)image {
@@ -132,6 +145,11 @@
   if (error) {
     NSLog(@"Error loading texture from image: %@",error);
   }
+}
+
+-(void)addChild:(EEShape *)child {
+  child.parent = self;
+  [children addObject:child];
 }
 
 @end

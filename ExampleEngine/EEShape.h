@@ -19,6 +19,9 @@
   float rotation;
   
   GLKTextureInfo *texture;
+  
+  NSMutableArray *children;
+  EEShape *parent;
 }
 
 @property(readonly) int numVertices;
@@ -29,8 +32,12 @@
 @property BOOL useConstantColor;
 @property GLKVector2 position, scale;
 @property float rotation;
+@property(strong, readonly) NSMutableArray *children;
+@property(strong) EEShape *parent;
+@property(readonly) GLKMatrix4 modelviewMatrix;
 
 -(void)renderInScene:(EEScene *)scene;
 -(void)setTextureImage:(UIImage *)image;
+-(void)addChild:(EEShape *)child;
 
 @end
