@@ -28,6 +28,8 @@
 		3C7657E213FC4EB000D71342 /* HexagonScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7657E113FC4EB000D71342 /* HexagonScene.m */; };
 		3C953B7013FD5A01007803E4 /* landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C953B6F13FD5A01007803E4 /* landscape.jpg */; };
 		3C953B7713FD6076007803E4 /* LandscapeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C953B7613FD6076007803E4 /* LandscapeScene.m */; };
+		3C953B7A13FD6C25007803E4 /* BeachBallScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C953B7913FD6C24007803E4 /* BeachBallScene.m */; };
+		3C953B7C13FD6C52007803E4 /* ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C953B7B13FD6C52007803E4 /* ball.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,9 @@
 		3C953B6F13FD5A01007803E4 /* landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = landscape.jpg; sourceTree = "<group>"; };
 		3C953B7513FD6076007803E4 /* LandscapeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapeScene.h; sourceTree = "<group>"; };
 		3C953B7613FD6076007803E4 /* LandscapeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapeScene.m; sourceTree = "<group>"; };
+		3C953B7813FD6C24007803E4 /* BeachBallScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeachBallScene.h; sourceTree = "<group>"; };
+		3C953B7913FD6C24007803E4 /* BeachBallScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeachBallScene.m; sourceTree = "<group>"; };
+		3C953B7B13FD6C52007803E4 /* ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ball.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +187,8 @@
 				3C7657E113FC4EB000D71342 /* HexagonScene.m */,
 				3C953B7513FD6076007803E4 /* LandscapeScene.h */,
 				3C953B7613FD6076007803E4 /* LandscapeScene.m */,
+				3C953B7813FD6C24007803E4 /* BeachBallScene.h */,
+				3C953B7913FD6C24007803E4 /* BeachBallScene.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -189,6 +196,7 @@
 		3C953B6D13FD596F007803E4 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				3C953B7B13FD6C52007803E4 /* ball.jpg */,
 				3C953B6F13FD5A01007803E4 /* landscape.jpg */,
 			);
 			name = Textures;
@@ -247,6 +255,7 @@
 			files = (
 				3C69617413FAC12600540465 /* InfoPlist.strings in Resources */,
 				3C953B7013FD5A01007803E4 /* landscape.jpg in Resources */,
+				3C953B7C13FD6C52007803E4 /* ball.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +280,7 @@
 				3C7657DF13FC4DEA00D71342 /* EERegularPolygon.m in Sources */,
 				3C7657E213FC4EB000D71342 /* HexagonScene.m in Sources */,
 				3C953B7713FD6076007803E4 /* LandscapeScene.m in Sources */,
+				3C953B7A13FD6C25007803E4 /* BeachBallScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

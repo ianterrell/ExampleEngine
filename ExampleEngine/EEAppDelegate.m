@@ -8,7 +8,7 @@
 
 #import "EEAppDelegate.h"
 #import "EESceneController.h"
-#import "LandscapeScene.h"
+#import "BeachBallScene.h"
 
 @implementation EEAppDelegate
 
@@ -30,7 +30,7 @@
   self.window.rootViewController = controller;
   [self.window makeKeyAndVisible];
   
-  scene = [[LandscapeScene alloc] init];
+  scene = [[BeachBallScene alloc] init];
   scene.clearColor = GLKVector4Make(0.1, 0.9, 0.9, 0.0);
   scene.left   = -3;
   scene.right  =  3;
