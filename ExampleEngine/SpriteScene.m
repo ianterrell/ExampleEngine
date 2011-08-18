@@ -15,6 +15,7 @@
   if (self) {
     sprite = [[EESprite alloc] initWithImage:[UIImage imageNamed:@"boy-sprite.png"] pointRatio:100];
     sprite.position = GLKVector2Make(2,-1);
+    sprite.rotation = 0.25*M_TAU;
   }
   return self;
 }

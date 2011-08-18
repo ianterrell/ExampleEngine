@@ -16,6 +16,7 @@
   BOOL useConstantColor;
   
   GLKVector2 position;
+  float rotation;
   
   GLKTextureInfo *texture;
 }
@@ -27,6 +28,7 @@
 @property GLKVector4 color;
 @property BOOL useConstantColor;
 @property GLKVector2 position;
+@property float rotation;
 
 -(void)renderInScene:(EEScene *)scene;
 -(void)setTextureImage:(UIImage *)image;

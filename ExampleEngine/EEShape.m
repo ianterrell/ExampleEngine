@@ -10,7 +10,7 @@
 
 @implementation EEShape
 
-@synthesize color, useConstantColor, position;
+@synthesize color, useConstantColor, position, rotation;
 
 -(int)numVertices {
   return 0;
@@ -53,8 +53,9 @@
     effect.texture2d0.glName = texture.glName;
   }
   
-  // Create a modelview matrix to position the object
-  effect.transform.modelviewMatrix = GLKMatrix4MakeTranslation(position.x, position.y, 0);
+  // Create a modelview matrix to position and rotate the object
+  effect.transform.modelviewMatrix = GLKMatrix4Multiply(GLKMatrix4MakeTranslation(position.x, position.y, 0),
+                                                        GLKMatrix4MakeRotation(rotation, 0, 0, 1));
   
   // Set up the projection matrix to fit the scene's boundaries
   effect.transform.projectionMatrix = scene.projectionMatrix;
