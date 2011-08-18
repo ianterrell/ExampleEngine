@@ -10,7 +10,7 @@
 
 @implementation EEShape
 
-@synthesize color, useConstantColor, position, rotation;
+@synthesize color, useConstantColor, position, rotation, scale;
 
 -(int)numVertices {
   return 0;
@@ -54,8 +54,10 @@
   }
   
   // Create a modelview matrix to position and rotate the object
-  effect.transform.modelviewMatrix = GLKMatrix4Multiply(GLKMatrix4MakeTranslation(position.x, position.y, 0),
-                                                        GLKMatrix4MakeRotation(rotation, 0, 0, 1));
+  GLKMatrix4 modelviewMatrix = GLKMatrix4Multiply(GLKMatrix4MakeTranslation(position.x, position.y, 0),
+                                                  GLKMatrix4MakeRotation(rotation, 0, 0, 1));
+  modelviewMatrix = GLKMatrix4Multiply(modelviewMatrix, GLKMatrix4MakeScale(scale.x, scale.y, 1));
+  effect.transform.modelviewMatrix = modelviewMatrix;
   
   // Set up the projection matrix to fit the scene's boundaries
   effect.transform.projectionMatrix = scene.projectionMatrix;
