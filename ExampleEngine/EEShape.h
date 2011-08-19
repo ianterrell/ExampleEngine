@@ -16,9 +16,8 @@
   BOOL useConstantColor;
   
   GLKVector2 position, velocity, acceleration;
-
+  float rotation, angularVelocity, angularAcceleration;
   GLKVector2 scale;
-  float rotation;
   
   GLKTextureInfo *texture;
   
@@ -33,7 +32,7 @@
 @property GLKVector4 color;
 @property BOOL useConstantColor;
 @property GLKVector2 position, velocity, acceleration, scale;
-@property float rotation;
+@property float rotation, angularVelocity, angularAcceleration;
 @property(strong, readonly) NSMutableArray *children;
 @property(strong) EEShape *parent;
 @property(readonly) GLKMatrix4 modelviewMatrix;

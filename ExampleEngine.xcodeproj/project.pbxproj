@@ -41,6 +41,7 @@
 		3CB9A2B413FDA0DC009288FA /* ForestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9A2B313FDA0DC009288FA /* ForestScene.m */; };
 		3CC7185913FEBEAD0051886C /* VelocityScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7185813FEBEAD0051886C /* VelocityScene.m */; };
 		3CC7185D13FEC9EC0051886C /* AccelerationScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7185C13FEC9EC0051886C /* AccelerationScene.m */; };
+		3CC7186013FECF080051886C /* RotatingTreeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7185F13FECF080051886C /* RotatingTreeScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,8 @@
 		3CC7185813FEBEAD0051886C /* VelocityScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VelocityScene.m; sourceTree = "<group>"; };
 		3CC7185B13FEC9EB0051886C /* AccelerationScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerationScene.h; sourceTree = "<group>"; };
 		3CC7185C13FEC9EC0051886C /* AccelerationScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerationScene.m; sourceTree = "<group>"; };
+		3CC7185E13FECF080051886C /* RotatingTreeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotatingTreeScene.h; sourceTree = "<group>"; };
+		3CC7185F13FECF080051886C /* RotatingTreeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotatingTreeScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +241,8 @@
 				3CC7185813FEBEAD0051886C /* VelocityScene.m */,
 				3CC7185B13FEC9EB0051886C /* AccelerationScene.h */,
 				3CC7185C13FEC9EC0051886C /* AccelerationScene.m */,
+				3CC7185E13FECF080051886C /* RotatingTreeScene.h */,
+				3CC7185F13FECF080051886C /* RotatingTreeScene.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 				3C1EF89B13FDA83900B0F2E3 /* OptimizedTree.m in Sources */,
 				3CC7185913FEBEAD0051886C /* VelocityScene.m in Sources */,
 				3CC7185D13FEC9EC0051886C /* AccelerationScene.m in Sources */,
+				3CC7186013FECF080051886C /* RotatingTreeScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
