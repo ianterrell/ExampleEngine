@@ -13,12 +13,16 @@
 
 @interface EEAnimation : NSObject {
   NSTimeInterval duration, elapsedTime;
-  GLKVector2 positionDelta;
+  GLKVector2 positionDelta, scaleDelta;
+  float rotationDelta;
+  GLKVector4 colorDelta;
 }
 
 @property NSTimeInterval duration;
 @property(readonly) NSTimeInterval elapsedTime;
-@property GLKVector2 positionDelta;
+@property GLKVector2 positionDelta, scaleDelta;
+@property float rotationDelta;
+@property GLKVector4 colorDelta;
 
 -(void)animateShape:(EEShape *)shape dt:(NSTimeInterval)dt;
 
