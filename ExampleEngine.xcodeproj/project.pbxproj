@@ -46,6 +46,7 @@
 		3CC7186713FEDF2E0051886C /* ManuallyMovedTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7186613FEDF2E0051886C /* ManuallyMovedTree.m */; };
 		3CC7186A13FEE61F0051886C /* ComplexAnimationScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7186913FEE61E0051886C /* ComplexAnimationScene.m */; };
 		3CC7186D13FEECA60051886C /* PrettyAPIMoveScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7186C13FEECA50051886C /* PrettyAPIMoveScene.m */; };
+		3CC7187113FEEE7F0051886C /* ColorChangeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7187013FEEE7F0051886C /* ColorChangeScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +120,8 @@
 		3CC7186913FEE61E0051886C /* ComplexAnimationScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexAnimationScene.m; sourceTree = "<group>"; };
 		3CC7186B13FEECA50051886C /* PrettyAPIMoveScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyAPIMoveScene.h; sourceTree = "<group>"; };
 		3CC7186C13FEECA50051886C /* PrettyAPIMoveScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyAPIMoveScene.m; sourceTree = "<group>"; };
+		3CC7186F13FEEE7E0051886C /* ColorChangeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorChangeScene.h; sourceTree = "<group>"; };
+		3CC7187013FEEE7F0051886C /* ColorChangeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorChangeScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +265,8 @@
 				3CC7186913FEE61E0051886C /* ComplexAnimationScene.m */,
 				3CC7186B13FEECA50051886C /* PrettyAPIMoveScene.h */,
 				3CC7186C13FEECA50051886C /* PrettyAPIMoveScene.m */,
+				3CC7186F13FEEE7E0051886C /* ColorChangeScene.h */,
+				3CC7187013FEEE7F0051886C /* ColorChangeScene.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 				3CC7186713FEDF2E0051886C /* ManuallyMovedTree.m in Sources */,
 				3CC7186A13FEE61F0051886C /* ComplexAnimationScene.m in Sources */,
 				3CC7186D13FEECA60051886C /* PrettyAPIMoveScene.m in Sources */,
+				3CC7187113FEEE7F0051886C /* ColorChangeScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
