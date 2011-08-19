@@ -7,6 +7,7 @@
 //
 
 #import "EEScene.h"
+#import "EEShape.h"
 
 @implementation EEScene
 
@@ -22,8 +23,11 @@
   return self;
 }
 
--(void)update {
+-(void)update:(NSTimeInterval)dt {
 //  NSLog(@"in EEScene's update");
+  [shapes enumerateObjectsUsingBlock:^(EEShape *shape, NSUInteger idx, BOOL *stop) {
+    [shape update:dt];
+  }];
 }
 
 -(void)render {

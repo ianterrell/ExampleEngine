@@ -10,7 +10,7 @@
 
 @implementation EEShape
 
-@synthesize color, useConstantColor, position, rotation, scale, children, parent, texture;
+@synthesize color, useConstantColor, position, velocity, rotation, scale, children, parent, texture;
 
 -(id)init {
   self = [super init];
@@ -68,6 +68,11 @@
     modelviewMatrix = GLKMatrix4Multiply(parent.modelviewMatrix, modelviewMatrix);
   
   return modelviewMatrix;
+}
+
+-(void)update:(NSTimeInterval)dt {
+  GLKVector2 distanceTraveled = GLKVector2MultiplyScalar(self.velocity, dt);
+  self.position = GLKVector2Add(self.position, distanceTraveled);
 }
 
 -(void)renderInScene:(EEScene *)scene {

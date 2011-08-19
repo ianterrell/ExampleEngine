@@ -39,6 +39,7 @@
 		3CB9A2AD13FD8D09009288FA /* TreeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9A2AC13FD8D09009288FA /* TreeScene.m */; };
 		3CB9A2B113FDA08A009288FA /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9A2B013FDA08A009288FA /* Tree.m */; };
 		3CB9A2B413FDA0DC009288FA /* ForestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9A2B313FDA0DC009288FA /* ForestScene.m */; };
+		3CC7185913FEBEAD0051886C /* VelocityScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7185813FEBEAD0051886C /* VelocityScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,8 @@
 		3CB9A2B013FDA08A009288FA /* Tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tree.m; sourceTree = "<group>"; };
 		3CB9A2B213FDA0DC009288FA /* ForestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForestScene.h; sourceTree = "<group>"; };
 		3CB9A2B313FDA0DC009288FA /* ForestScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForestScene.m; sourceTree = "<group>"; };
+		3CC7185713FEBEAD0051886C /* VelocityScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VelocityScene.h; sourceTree = "<group>"; };
+		3CC7185813FEBEAD0051886C /* VelocityScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VelocityScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +231,8 @@
 				3CB9A2B313FDA0DC009288FA /* ForestScene.m */,
 				3C1EF89913FDA83900B0F2E3 /* OptimizedTree.h */,
 				3C1EF89A13FDA83900B0F2E3 /* OptimizedTree.m */,
+				3CC7185713FEBEAD0051886C /* VelocityScene.h */,
+				3CC7185813FEBEAD0051886C /* VelocityScene.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 				3CB9A2B113FDA08A009288FA /* Tree.m in Sources */,
 				3CB9A2B413FDA0DC009288FA /* ForestScene.m in Sources */,
 				3C1EF89B13FDA83900B0F2E3 /* OptimizedTree.m in Sources */,
+				3CC7185913FEBEAD0051886C /* VelocityScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

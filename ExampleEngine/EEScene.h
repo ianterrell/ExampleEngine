@@ -21,7 +21,7 @@
 @property(readonly) GLKMatrix4 projectionMatrix;
 @property(strong,readonly) NSMutableArray *shapes;
 
--(void)update;
+-(void)update:(NSTimeInterval)dt;
 -(void)render;
 
 @end

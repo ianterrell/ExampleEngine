@@ -8,7 +8,7 @@
 
 #import "EEAppDelegate.h"
 #import "EESceneController.h"
-#import "ForestScene.h"
+#import "VelocityScene.h"
 
 @implementation EEAppDelegate
 
@@ -30,7 +30,7 @@
   self.window.rootViewController = controller;
   [self.window makeKeyAndVisible];
   
-  scene = [[ForestScene alloc] init];
+  scene = [[VelocityScene alloc] init];
   scene.clearColor = GLKVector4Make(0.1, 0.9, 0.9, 0.0);
   scene.left   = -3;
   scene.right  =  3;
@@ -42,7 +42,7 @@
 
 - (void)glkViewControllerUpdate:(GLKViewController *)controller {
 //  NSLog(@"in glkViewControllerUpdate");
-  [scene update];
+  [scene update:controller.timeSinceLastUpdate];
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
