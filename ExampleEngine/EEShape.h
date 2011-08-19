@@ -45,5 +45,6 @@
 -(void)renderInScene:(EEScene *)scene;
 -(void)setTextureImage:(UIImage *)image;
 -(void)addChild:(EEShape *)child;
+-(void)animateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations;
 
 @end

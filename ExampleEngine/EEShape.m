@@ -180,4 +180,26 @@
   [children addObject:child];
 }
 
+-(void)animateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animationsBlock {
+  GLKVector2 currentPosition = self.position;
+  GLKVector2 currentScale = self.scale;
+  GLKVector4 currentColor = self.color;
+  float currentRotation = self.rotation;
+  
+  animationsBlock();
+  
+  EEAnimation *animation = [[EEAnimation alloc] init];
+  animation.positionDelta = GLKVector2Subtract(self.position, currentPosition);
+  animation.scaleDelta = GLKVector2Subtract(self.scale, currentScale);
+  animation.rotationDelta = self.rotation - currentRotation;
+  animation.colorDelta = GLKVector4Subtract(self.color, currentColor);
+  animation.duration = duration;
+  [self.animations addObject:animation];
+  
+  self.position = currentPosition;
+  self.scale = currentScale;
+  self.color = currentColor;
+  self.rotation = currentRotation;
+}
+
 @end
