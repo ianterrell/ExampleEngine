@@ -10,7 +10,7 @@
 
 @implementation EEShape
 
-@synthesize color, useConstantColor, position, velocity, rotation, scale, children, parent, texture;
+@synthesize color, useConstantColor, position, velocity, acceleration, rotation, scale, children, parent, texture;
 
 -(id)init {
   self = [super init];
@@ -71,6 +71,9 @@
 }
 
 -(void)update:(NSTimeInterval)dt {
+  GLKVector2 changeInVelocity = GLKVector2MultiplyScalar(self.acceleration, dt);
+  self.velocity = GLKVector2Add(self.velocity, changeInVelocity);
+  
   GLKVector2 distanceTraveled = GLKVector2MultiplyScalar(self.velocity, dt);
   self.position = GLKVector2Add(self.position, distanceTraveled);
 }
