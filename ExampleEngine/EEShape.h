@@ -23,6 +23,8 @@
   
   NSMutableArray *children;
   EEShape *parent;
+  
+  NSMutableArray *animations;
 }
 
 @property(readonly) int numVertices;
@@ -37,6 +39,7 @@
 @property(strong) EEShape *parent;
 @property(readonly) GLKMatrix4 modelviewMatrix;
 @property(strong,readonly) GLKTextureInfo *texture;
+@property(strong, readonly) NSMutableArray *animations;
 
 -(void)update:(NSTimeInterval)dt;
 -(void)renderInScene:(EEScene *)scene;

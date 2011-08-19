@@ -42,6 +42,8 @@
 		3CC7185913FEBEAD0051886C /* VelocityScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7185813FEBEAD0051886C /* VelocityScene.m */; };
 		3CC7185D13FEC9EC0051886C /* AccelerationScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7185C13FEC9EC0051886C /* AccelerationScene.m */; };
 		3CC7186013FECF080051886C /* RotatingTreeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7185F13FECF080051886C /* RotatingTreeScene.m */; };
+		3CC7186413FED7630051886C /* EEAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7186313FED7630051886C /* EEAnimation.m */; };
+		3CC7186713FEDF2E0051886C /* ManuallyMovedTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7186613FEDF2E0051886C /* ManuallyMovedTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +109,10 @@
 		3CC7185C13FEC9EC0051886C /* AccelerationScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerationScene.m; sourceTree = "<group>"; };
 		3CC7185E13FECF080051886C /* RotatingTreeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotatingTreeScene.h; sourceTree = "<group>"; };
 		3CC7185F13FECF080051886C /* RotatingTreeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotatingTreeScene.m; sourceTree = "<group>"; };
+		3CC7186213FED7630051886C /* EEAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEAnimation.h; sourceTree = "<group>"; };
+		3CC7186313FED7630051886C /* EEAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEAnimation.m; sourceTree = "<group>"; };
+		3CC7186513FEDF2D0051886C /* ManuallyMovedTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManuallyMovedTree.h; sourceTree = "<group>"; };
+		3CC7186613FEDF2E0051886C /* ManuallyMovedTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManuallyMovedTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 			children = (
 				3C69618613FADEF800540465 /* Scenes */,
 				3C7657BE13FC19C300D71342 /* Shapes */,
+				3CC7186113FED7520051886C /* Animations */,
 				3C7657CA13FC26A100D71342 /* Example Game Code */,
 				3C953B6D13FD596F007803E4 /* Textures */,
 				3C69617813FAC12600540465 /* EEAppDelegate.h */,
@@ -243,6 +250,8 @@
 				3CC7185C13FEC9EC0051886C /* AccelerationScene.m */,
 				3CC7185E13FECF080051886C /* RotatingTreeScene.h */,
 				3CC7185F13FECF080051886C /* RotatingTreeScene.m */,
+				3CC7186513FEDF2D0051886C /* ManuallyMovedTree.h */,
+				3CC7186613FEDF2E0051886C /* ManuallyMovedTree.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -256,6 +265,15 @@
 				3C953B6F13FD5A01007803E4 /* landscape.jpg */,
 			);
 			name = Textures;
+			sourceTree = "<group>";
+		};
+		3CC7186113FED7520051886C /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				3CC7186213FED7630051886C /* EEAnimation.h */,
+				3CC7186313FED7630051886C /* EEAnimation.m */,
+			);
+			name = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +367,8 @@
 				3CC7185913FEBEAD0051886C /* VelocityScene.m in Sources */,
 				3CC7185D13FEC9EC0051886C /* AccelerationScene.m in Sources */,
 				3CC7186013FECF080051886C /* RotatingTreeScene.m in Sources */,
+				3CC7186413FED7630051886C /* EEAnimation.m in Sources */,
+				3CC7186713FEDF2E0051886C /* ManuallyMovedTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

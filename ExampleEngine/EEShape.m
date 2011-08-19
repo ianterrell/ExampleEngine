@@ -7,6 +7,7 @@
 //
 
 #import "EEShape.h"
+#import "EEAnimation.h"
 
 @implementation EEShape
 
@@ -15,7 +16,8 @@
             rotation, angularVelocity, angularAcceleration, 
             scale, 
             children, parent, 
-            texture;
+            texture,
+            animations;
 
 -(id)init {
   self = [super init];
@@ -38,6 +40,9 @@
     
     // No children by default
     children = [[NSMutableArray alloc] init];
+    
+    // No animations by default
+    animations = [[NSMutableArray alloc] init];
   }
   return self;
 }
@@ -84,6 +89,14 @@
   
   GLKVector2 distanceTraveled = GLKVector2MultiplyScalar(self.velocity, dt);
   self.position = GLKVector2Add(self.position, distanceTraveled);
+  
+  [animations enumerateObjectsUsingBlock:^(EEAnimation *animation, NSUInteger idx, BOOL *stop) {
+    [animation animateShape:self dt:dt];
+  }];
+  
+  [animations filterUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(EEAnimation *animation, NSDictionary *bindings) {
+    return animation.elapsedTime <= animation.duration;
+  }]];
 }
 
 -(void)renderInScene:(EEScene *)scene {
