@@ -30,6 +30,13 @@
     complexAnimation.duration = 3;
     [rectangle.animations addObject:complexAnimation];
     
+    EEAnimation *secondAnimation = [[EEAnimation alloc] init];
+    secondAnimation.positionDelta = GLKVector2Make(-1,-1);
+    secondAnimation.rotationDelta = M_TAU;
+    secondAnimation.colorDelta = GLKVector4Make(0, 1, 0, 0);
+    secondAnimation.duration = 2;
+    [rectangle.animations addObject:secondAnimation];
+    
     [self.shapes addObject:rectangle];
   }
   return self;
