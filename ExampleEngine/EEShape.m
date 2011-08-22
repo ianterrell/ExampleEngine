@@ -111,10 +111,9 @@
   
   // Set up our texture effect if set
   if (self.texture != nil) {
-    effect.texturingEnabled = YES;
     effect.texture2d0.envMode = GLKTextureEnvModeReplace;
     effect.texture2d0.target = GLKTextureTarget2D;
-    effect.texture2d0.glName = self.texture.glName;
+    effect.texture2d0.name = self.texture.name;
   }
   
   // Create a modelview matrix to position and rotate the object
