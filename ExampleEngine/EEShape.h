@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
 #import "EEScene.h"
+#import "EESpriteAnimation.h"
 
 @interface EEShape : NSObject {
   NSMutableData *vertexData, *vertexColorData, *textureCoordinateData;
@@ -25,6 +26,7 @@
   EEShape *parent;
   
   NSMutableArray *animations;
+  EESpriteAnimation *spriteAnimation;
 }
 
 @property(readonly) int numVertices;
@@ -40,6 +42,7 @@
 @property(readonly) GLKMatrix4 modelviewMatrix;
 @property(strong,readonly) GLKTextureInfo *texture;
 @property(strong, readonly) NSMutableArray *animations;
+@property(strong) EESpriteAnimation *spriteAnimation;
 
 -(void)update:(NSTimeInterval)dt;
 -(void)renderInScene:(EEScene *)scene;

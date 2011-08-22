@@ -8,7 +8,7 @@
 
 #import "EEAppDelegate.h"
 #import "EESceneController.h"
-#import "ColorChangeScene.h"
+#import "WalkingAnimationScene.h"
 
 @implementation EEAppDelegate
 
@@ -30,8 +30,8 @@
   self.window.rootViewController = controller;
   [self.window makeKeyAndVisible];
   
-  scene = [[ColorChangeScene alloc] init];
-  scene.clearColor = GLKVector4Make(0.1, 0.9, 0.9, 0.0);
+  scene = [[WalkingAnimationScene alloc] init];
+  scene.clearColor = GLKVector4Make(1,1,1,1);
   scene.left   = -3;
   scene.right  =  3;
   scene.bottom = -2;

@@ -17,7 +17,7 @@
             scale, 
             children, parent, 
             texture,
-            animations;
+            animations, spriteAnimation;
 
 -(id)init {
   self = [super init];
@@ -97,6 +97,8 @@
   [animations filterUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(EEAnimation *animation, NSDictionary *bindings) {
     return animation.elapsedTime <= animation.duration;
   }]];
+  
+  [spriteAnimation update:dt];
 }
 
 -(void)renderInScene:(EEScene *)scene {
@@ -113,7 +115,10 @@
   if (self.texture != nil) {
     effect.texture2d0.envMode = GLKTextureEnvModeReplace;
     effect.texture2d0.target = GLKTextureTarget2D;
-    effect.texture2d0.name = self.texture.name;
+    if (self.spriteAnimation != nil)
+      effect.texture2d0.name = [self.spriteAnimation currentFrame].name;
+    else
+      effect.texture2d0.name = self.texture.name;
   }
   
   // Create a modelview matrix to position and rotate the object

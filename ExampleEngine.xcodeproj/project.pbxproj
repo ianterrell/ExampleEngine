@@ -47,6 +47,18 @@
 		3CC7186A13FEE61F0051886C /* ComplexAnimationScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7186913FEE61E0051886C /* ComplexAnimationScene.m */; };
 		3CC7186D13FEECA60051886C /* PrettyAPIMoveScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7186C13FEECA50051886C /* PrettyAPIMoveScene.m */; };
 		3CC7187113FEEE7F0051886C /* ColorChangeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7187013FEEE7F0051886C /* ColorChangeScene.m */; };
+		3CED17921402A90B00678E59 /* EESpriteAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CED17911402A90B00678E59 /* EESpriteAnimation.m */; };
+		3CED17961402AD7F00678E59 /* WalkingAnimationScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CED17951402AD7F00678E59 /* WalkingAnimationScene.m */; };
+		3CED17A11402AE8500678E59 /* alfred1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CED17981402AE8500678E59 /* alfred1.png */; };
+		3CED17A21402AE8500678E59 /* alfred2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CED17991402AE8500678E59 /* alfred2.png */; };
+		3CED17A31402AE8500678E59 /* alfred3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CED179A1402AE8500678E59 /* alfred3.png */; };
+		3CED17A41402AE8500678E59 /* alfred4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CED179B1402AE8500678E59 /* alfred4.png */; };
+		3CED17A51402AE8500678E59 /* alfred5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CED179C1402AE8500678E59 /* alfred5.png */; };
+		3CED17A61402AE8500678E59 /* alfred6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CED179D1402AE8500678E59 /* alfred6.png */; };
+		3CED17A71402AE8500678E59 /* alfred7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CED179E1402AE8500678E59 /* alfred7.png */; };
+		3CED17A81402AE8500678E59 /* alfred8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CED179F1402AE8500678E59 /* alfred8.png */; };
+		3CED17A91402AE8500678E59 /* alfred9.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CED17A01402AE8500678E59 /* alfred9.png */; };
+		3CED17AB1402AFC600678E59 /* alfred0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CED17AA1402AFC600678E59 /* alfred0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +134,20 @@
 		3CC7186C13FEECA50051886C /* PrettyAPIMoveScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyAPIMoveScene.m; sourceTree = "<group>"; };
 		3CC7186F13FEEE7E0051886C /* ColorChangeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorChangeScene.h; sourceTree = "<group>"; };
 		3CC7187013FEEE7F0051886C /* ColorChangeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorChangeScene.m; sourceTree = "<group>"; };
+		3CED17901402A90B00678E59 /* EESpriteAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EESpriteAnimation.h; sourceTree = "<group>"; };
+		3CED17911402A90B00678E59 /* EESpriteAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EESpriteAnimation.m; sourceTree = "<group>"; };
+		3CED17941402AD7F00678E59 /* WalkingAnimationScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkingAnimationScene.h; sourceTree = "<group>"; };
+		3CED17951402AD7F00678E59 /* WalkingAnimationScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkingAnimationScene.m; sourceTree = "<group>"; };
+		3CED17981402AE8500678E59 /* alfred1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alfred1.png; path = "sprite animation/alfred1.png"; sourceTree = "<group>"; };
+		3CED17991402AE8500678E59 /* alfred2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alfred2.png; path = "sprite animation/alfred2.png"; sourceTree = "<group>"; };
+		3CED179A1402AE8500678E59 /* alfred3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alfred3.png; path = "sprite animation/alfred3.png"; sourceTree = "<group>"; };
+		3CED179B1402AE8500678E59 /* alfred4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alfred4.png; path = "sprite animation/alfred4.png"; sourceTree = "<group>"; };
+		3CED179C1402AE8500678E59 /* alfred5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alfred5.png; path = "sprite animation/alfred5.png"; sourceTree = "<group>"; };
+		3CED179D1402AE8500678E59 /* alfred6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alfred6.png; path = "sprite animation/alfred6.png"; sourceTree = "<group>"; };
+		3CED179E1402AE8500678E59 /* alfred7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alfred7.png; path = "sprite animation/alfred7.png"; sourceTree = "<group>"; };
+		3CED179F1402AE8500678E59 /* alfred8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alfred8.png; path = "sprite animation/alfred8.png"; sourceTree = "<group>"; };
+		3CED17A01402AE8500678E59 /* alfred9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alfred9.png; path = "sprite animation/alfred9.png"; sourceTree = "<group>"; };
+		3CED17AA1402AFC600678E59 /* alfred0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alfred0.png; path = "sprite animation/alfred0.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +293,8 @@
 				3CC7186C13FEECA50051886C /* PrettyAPIMoveScene.m */,
 				3CC7186F13FEEE7E0051886C /* ColorChangeScene.h */,
 				3CC7187013FEEE7F0051886C /* ColorChangeScene.m */,
+				3CED17941402AD7F00678E59 /* WalkingAnimationScene.h */,
+				3CED17951402AD7F00678E59 /* WalkingAnimationScene.m */,
 			);
 			name = "Example Game Code";
 			sourceTree = "<group>";
@@ -274,6 +302,7 @@
 		3C953B6D13FD596F007803E4 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				3CED17971402AE7700678E59 /* Walking Sprite */,
 				3C953B8C13FD775D007803E4 /* boy-sprite.png */,
 				3C953B8213FD6EF1007803E4 /* sierpinksy.jpg */,
 				3C953B7B13FD6C52007803E4 /* ball.jpg */,
@@ -287,8 +316,27 @@
 			children = (
 				3CC7186213FED7630051886C /* EEAnimation.h */,
 				3CC7186313FED7630051886C /* EEAnimation.m */,
+				3CED17901402A90B00678E59 /* EESpriteAnimation.h */,
+				3CED17911402A90B00678E59 /* EESpriteAnimation.m */,
 			);
 			name = Animations;
+			sourceTree = "<group>";
+		};
+		3CED17971402AE7700678E59 /* Walking Sprite */ = {
+			isa = PBXGroup;
+			children = (
+				3CED17AA1402AFC600678E59 /* alfred0.png */,
+				3CED17981402AE8500678E59 /* alfred1.png */,
+				3CED17991402AE8500678E59 /* alfred2.png */,
+				3CED179A1402AE8500678E59 /* alfred3.png */,
+				3CED179B1402AE8500678E59 /* alfred4.png */,
+				3CED179C1402AE8500678E59 /* alfred5.png */,
+				3CED179D1402AE8500678E59 /* alfred6.png */,
+				3CED179E1402AE8500678E59 /* alfred7.png */,
+				3CED179F1402AE8500678E59 /* alfred8.png */,
+				3CED17A01402AE8500678E59 /* alfred9.png */,
+			);
+			name = "Walking Sprite";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +395,16 @@
 				3C953B7C13FD6C52007803E4 /* ball.jpg in Resources */,
 				3C953B8313FD6EF1007803E4 /* sierpinksy.jpg in Resources */,
 				3C953B8D13FD775D007803E4 /* boy-sprite.png in Resources */,
+				3CED17A11402AE8500678E59 /* alfred1.png in Resources */,
+				3CED17A21402AE8500678E59 /* alfred2.png in Resources */,
+				3CED17A31402AE8500678E59 /* alfred3.png in Resources */,
+				3CED17A41402AE8500678E59 /* alfred4.png in Resources */,
+				3CED17A51402AE8500678E59 /* alfred5.png in Resources */,
+				3CED17A61402AE8500678E59 /* alfred6.png in Resources */,
+				3CED17A71402AE8500678E59 /* alfred7.png in Resources */,
+				3CED17A81402AE8500678E59 /* alfred8.png in Resources */,
+				3CED17A91402AE8500678E59 /* alfred9.png in Resources */,
+				3CED17AB1402AFC600678E59 /* alfred0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +445,8 @@
 				3CC7186A13FEE61F0051886C /* ComplexAnimationScene.m in Sources */,
 				3CC7186D13FEECA60051886C /* PrettyAPIMoveScene.m in Sources */,
 				3CC7187113FEEE7F0051886C /* ColorChangeScene.m in Sources */,
+				3CED17921402A90B00678E59 /* EESpriteAnimation.m in Sources */,
+				3CED17961402AD7F00678E59 /* WalkingAnimationScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
