@@ -9,10 +9,32 @@
 #import "EEAppDelegate.h"
 #import "EESceneController.h"
 #import "WalkingAnimationScene.h"
+#import "BeachBallScene.h"
+#import "PrettyAPIMoveScene.h"
+#import "AccelerationScene.h"
+#import "ColorChangeScene.h"
+#import "ComplexAnimationScene.h"
+#import "ForestScene.h"
+#import "HexagonScene.h"
+#import "LandscapeScene.h"
+#import "ManuallyMovedTree.h"
+#import "OptimizedTree.h"
+#import "PrettyAPIMoveScene.h"
+#import "RectangleScene.h"
+#import "RotatingTreeScene.h"
+#import "SierpinskyTriangleScene.h"
+#import "SpriteScene.h"
+#import "TreeScene.h"
+#import "TriangleScene.h"
+#import "VelocityScene.h"
+
 
 @implementation EEAppDelegate
 
 @synthesize window = _window;
+
+NSArray *arrayOfScenes;
+int indexOfScene;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -27,17 +49,55 @@
   controller.view = view;
   
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  self.window.rootViewController = controller;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+  self.window.rootViewController = nav;
+    //[nav release];
+    
+    controller.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] 
+                                                   initWithTitle:@"Next" 
+                                                   style:UIBarButtonItemStyleBordered 
+                                                   target:self 
+                                                   action:@selector(nextScene:)];
+    
   [self.window makeKeyAndVisible];
   
-  scene = [[WalkingAnimationScene alloc] init];
-  scene.clearColor = GLKVector4Make(1,1,1,1);
-  scene.left   = -3;
-  scene.right  =  3;
-  scene.bottom = -2;
-  scene.top    =  2;
-  
+    // setup arrayOfScenes
+    indexOfScene = -1;
+    arrayOfScenes = [NSArray arrayWithObjects:[[PrettyAPIMoveScene alloc] init],
+                     [[BeachBallScene alloc] init], 
+                     [[WalkingAnimationScene alloc] init],
+                     [[AccelerationScene alloc] init],
+                     [[ColorChangeScene alloc] init],
+                     [[ComplexAnimationScene alloc] init],
+                     [[ForestScene alloc] init],
+                     [[LandscapeScene alloc] init],
+                     [[ManuallyMovedTree alloc] init],
+                     //[[OptimizedTree alloc] init],
+                     [[RotatingTreeScene alloc] init],
+                     [[SierpinskyTriangleScene alloc] init],
+                     [[SpriteScene alloc] init],
+                     [[TriangleScene alloc] init],
+                     [[VelocityScene alloc] init],
+                     [[HexagonScene alloc] init],
+                     [[PrettyAPIMoveScene alloc] init],
+                     [[RectangleScene alloc] init],
+                     nil];
+    
+    [self nextScene:self];
   return YES;
+}
+
+- (void) nextScene:(id) sender{
+    indexOfScene =  (indexOfScene >= [arrayOfScenes count] -1) ? 0 : indexOfScene + 1;
+    EEScene *newScene = [arrayOfScenes objectAtIndex:indexOfScene];
+    ((UINavigationController *)self.window.rootViewController).topViewController.title = NSStringFromClass([newScene class]);
+                                                                                          
+    scene = newScene;
+    scene.clearColor = GLKVector4Make(1,1,1,1);
+    scene.left   = -3;
+    scene.right  =  3;
+    scene.bottom = -2;
+    scene.top    =  2;
 }
 
 - (void)glkViewControllerUpdate:(GLKViewController *)controller {

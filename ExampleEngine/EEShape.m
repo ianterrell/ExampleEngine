@@ -145,6 +145,7 @@
   }
   
   // If we have a texture, tell OpenGL that we'll be using texture coordinate data
+
   if (texture != nil) {
     glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
     glVertexAttribPointer(GLKVertexAttribTexCoord0, 2, GL_FLOAT, GL_FALSE, 0, self.textureCoordinates);
