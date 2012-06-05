@@ -23,7 +23,7 @@
   GLKTextureInfo *texture;
   
   NSMutableArray *children;
-  EEShape *parent;
+  __weak EEShape *parent;
   
   NSMutableArray *animations;
   EESpriteAnimation *spriteAnimation;
@@ -38,7 +38,7 @@
 @property GLKVector2 position, velocity, acceleration, scale;
 @property float rotation, angularVelocity, angularAcceleration;
 @property(strong, readonly) NSMutableArray *children;
-@property(strong) EEShape *parent;
+@property(weak) EEShape *parent;
 @property(readonly) GLKMatrix4 modelviewMatrix;
 @property(strong,readonly) GLKTextureInfo *texture;
 @property(strong, readonly) NSMutableArray *animations;
